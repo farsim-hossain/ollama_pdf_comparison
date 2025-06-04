@@ -43,10 +43,10 @@ Follow these steps to set up and run the script.
 ### 4. Set Up the Project
 1. Clone or download this repository to your local machine:
    ```cmd
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/farsim-hossain/ollama_pdf_comparison.git
    cd your-repo-name
    ```
-   Replace `your-username` and `your-repo-name` with your GitHub username and repository name.
+
 
 2. Create a virtual environment:
    ```cmd
@@ -87,7 +87,7 @@ Follow these steps to set up and run the script.
 
 2. Run the script:
    ```cmd
-   python compare_form_1042_images.py
+   python image_comparison.py
    ```
 
 3. The script will:
@@ -109,36 +109,3 @@ Comparison between f1042--1994.jpg and f1042--2012.jpg:
 ...
 ```
 
-## Troubleshooting
-- **Ollama Server Not Running**:
-  - Ensure `ollama serve` is active in a separate terminal.
-  - Check if `llava:latest` is listed:
-    ```cmd
-    ollama list
-    ```
-- **No Images Found**:
-  - Verify that `input_images` contains at least two image files with "f1042" in their names and `.jpg`, `.jpeg`, or `.png` extensions.
-- **Memory Issues**:
-  - The vision model requires significant RAM (8GB+ recommended). Close other applications if the script crashes.
-- **Image Quality**:
-  - Ensure images are clear and readable. Low-quality or scanned images may reduce model accuracy.
-- **Python Package Errors**:
-  - Reinstall dependencies:
-    ```cmd
-    pip install ollama
-    ```
-
-## Notes
-- **Image-Based Comparison**: The script compares images directly, not PDFs. Convert PDFs to images using tools like `pdf2image` if needed.
-- **Single Page Comparison**: Each image is assumed to represent one page (e.g., the first page of a Form 1042 PDF).
-- **Local Processing**: Ollama runs locally, requiring sufficient CPU/GPU resources but no internet-based API calls.
-- **Customizations**:
-  - To use a different Ollama model, modify the `model` parameter in `compare_image_pair` (e.g., `granite3.2-vision:latest`).
-  - To output results in Excel, modify the script to parse the numbered lists into a `pandas` DataFrame.
-  - To focus on specific form sections, adjust the prompt in `compare_image_pair`.
-
-## License
-[Add your preferred license, e.g., MIT License]
-
-## Contact
-For issues or contributions, open an issue or pull request on this repository.
