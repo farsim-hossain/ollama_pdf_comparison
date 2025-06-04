@@ -73,7 +73,7 @@ def process_and_compare_images(input_dir: str, output_file: str = "form_1042_ima
         print(f"Error saving comparison to {output_file}: {e}")
 
 def main():
-    input_dir = "/content/input_pdfs"  # Replace with your actual folder path
+    input_dir = "input_images"  # Replace with your actual folder path
     if not os.path.exists(input_dir):
         print(f"Directory {input_dir} does not exist.")
         return
