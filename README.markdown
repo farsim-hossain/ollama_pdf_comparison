@@ -1,6 +1,6 @@
 # IRS Form 1042 Image Comparison
 
-This repository contains a Python script (`compare_form_1042_images.py`) that compares multiple IRS Form 1042 images (JPEG or PNG format) pairwise using Ollama's `llava:latest` vision model. The script identifies key differences in fields, instructions, or structure between pairs of images and saves the results to a text file (`form_1042_image_comparison.txt`). This tool is useful for tracking changes across different versions of Form 1042 (e.g., 1994, 2004, 2012).
+This repository contains a Python script that compares multiple IRS Form 1042 images (JPEG or PNG format) pairwise using Ollama's `llava:latest` vision model. The script identifies key differences in fields, instructions, or structure between pairs of images and saves the results to a text file (`form_1042_image_comparison.txt`). This tool is useful for tracking changes across different versions of Form 1042 (e.g., 1994, 2004, 2012).
 
 ## Prerequisites
 
