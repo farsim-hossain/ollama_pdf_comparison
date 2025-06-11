@@ -109,3 +109,82 @@ Comparison between f1042--1994.jpg and f1042--2012.jpg:
 ...
 ```
 
+
+## For Running PII Scripts 
+Certainly! Here's the **revised installation instruction**, including how to install **Tesseract OCR on Windows**, along with all necessary pip packages—without reinstalling Python itself.
+
+---
+
+## 📦 Installation Instructions (for Windows)
+
+These instructions assume you already have Python installed.
+
+---
+
+### 🧰 1. Set Up a Virtual Environment (Optional but Recommended)
+
+Open **Command Prompt** or **PowerShell** and run:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+---
+
+### 📦 2. Install Python Packages
+
+Install the required packages using `pip`:
+
+```bash
+pip install python-dotenv ollama groq pytesseract pillow presidio-analyzer presidio-anonymizer
+```
+
+Alternatively, you can create a `requirements.txt` file with:
+
+```txt
+python-dotenv
+ollama
+groq
+pytesseract
+pillow
+presidio-analyzer
+presidio-anonymizer
+```
+
+And install all at once:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 🔤 3. Install Tesseract OCR (Windows)
+
+1. **Download the installer**:
+
+   * From the official repo: [https://github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
+   * Direct installer link (latest): [https://github.com/UB-Mannheim/tesseract/wiki](https://github.com/UB-Mannheim/tesseract/wiki) (recommended for Windows)
+
+2. **Run the installer**:
+
+   * During installation, make sure the "Add to system PATH" checkbox is selected.
+   * Note the install location (default: `C:\Program Files\Tesseract-OCR`).
+
+3. **(If not added automatically)** Add Tesseract to your system PATH manually:
+
+   * Press `Win + S` → search for "Environment Variables"
+   * Edit `PATH` → Add: `C:\Program Files\Tesseract-OCR`
+   * Click OK to save.
+
+4. **Verify installation**:
+
+   ```bash
+   tesseract --version
+   ```
+
+---
+
+
+
