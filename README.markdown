@@ -111,7 +111,7 @@ Comparison between f1042--1994.jpg and f1042--2012.jpg:
 
 
 ## For Running PII Scripts 
-Certainly! Here's the **revised installation instruction**, including how to install **Tesseract OCR on Windows**, along with all necessary pip packages—without reinstalling Python itself.
+
 
 ---
 
