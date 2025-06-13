@@ -16,6 +16,8 @@ from presidio_analyzer import AnalyzerEngine, PatternRecognizer, Pattern
 from presidio_analyzer.nlp_engine import NlpEngineProvider
 from presidio_anonymizer import AnonymizerEngine, OperatorConfig
 
+# pytesseract.pytesseract.tesseract_cmd = r"C:\path\to\Tesseract-OCR\tesseract.exe"
+
 # Custom filter to suppress Presidio language warnings
 class PresidioWarningFilter(logging.Filter):
     def filter(self, record):
